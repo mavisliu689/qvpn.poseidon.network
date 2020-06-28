@@ -11,6 +11,6 @@ deploy:
  skip_cleanup: true
  github_token: $GITHUB_TOKEN
  local_dir: dist
- fqdn: vpn.poseidon.network
+ fqdn: staging.jelly.sh
  on:
    branch: master
