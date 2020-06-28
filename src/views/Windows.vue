@@ -43,7 +43,6 @@
         <h3><span class="number">7</span>{{ $t('last-step-title') }}</h3>
         <p class="info">{{ $t('go-to') }} <a href="https: //www.disneyplus.com/home" target="_blank">Disney+</a> {{ $t('last-step-account') }} <br> {{ $t('last-step') }}</p>
         <img src="../assets/macos-4.png" alt="">
-        <img :src="`${$t('images.macos-3')}`" alt="">
       </div>
       <div class="done"><h4>🎉 {{ $t('done') }}</h4></div>
     </div>
