@@ -4,31 +4,32 @@
     <div class="hr"></div>
     <div class="content">
       <div class="wrap">
-        <h3><span class="number">1</span>Download v2rayNG</h3>
-        <p class="info">You can download v2rayNG here: <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang&hl=en" target="_blank">Google Play Store</a></p>
+        <h3><span class="number">1</span>{{ $t('and-1-title') }}</h3>
+        <p class="info">{{ $t('and-1-1') }}: <a href="https://play.google.com/store/apps/details?id=com.v2ray.ang&hl=en" target="_blank">Google Play Store</a></p>
       </div>
       <div class="wrap">
-        <h3><span class="number">2</span>Save Config QRCode to your album</h3>
+        <h3><span class="number">2</span>{{ $t('and-2-title') }}</h3>
         <img class="s" src="../assets/qrcode.png" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">3</span>Click "+" icon, and tap "Import config from QRcode"</h3>
-        <img class="s" src="../assets/and-1.png" alt="" />
-        <img class="s" src="../assets/and-2.png" alt="" />
+        <h3><span class="number">3</span>{{ $t('and-3-title') }}</h3>
+        <img class="s" :src="`${$t('images.and-1')}`" alt="">
+        <img class="s" :src="`${$t('images.and-2')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">4</span>Accept connection request</h3>
+        <h3><span class="number">4</span>{{ $t('and-4-title') }}</h3>
         <p class="info">
         </p>
-        <img class="s" src="../assets/and-3.png" alt="">
+        <img class="s" :src="`${$t('images.and-3')}`" alt="">
       </div>
       <div>
-        <h3><span class="number">5</span>Download Disney+ App</h3>
-        <div class="caution">You will need to have a United States Google Play Account to download the app.</div>
-        <p class="info">Go to <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=en_US" target="_blank">Google Play Store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <h3><span class="number">5</span>{{ $t('and-5-title') }}</h3>
+        <div class="caution">{{ $t('and-5-1') }}</div>
+        <p class="info">{{ $t('go-to') }} <a href="https://play.google.com/store/apps/details?id=com.disney.disneyplus&hl=en_US" target="_blank">Google Play Store</a> {{ $t('and-5-2') }}<br/>
+        {{ $t('last-step') }}</p>
         <img class="s" src="../assets/and-4.png" alt="">
       </div>
-      <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
+      <div class="done"><h4>🎉 {{ $t('done') }}</h4></div>
     </div>
   </div>
 </template>

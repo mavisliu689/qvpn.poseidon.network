@@ -4,35 +4,36 @@
     <div class="hr"></div>
     <div class="content">
       <div class="wrap">
-        <h3><span class="number">1</span>Download Shadowrocket</h3>
-        <p class="info">You can download Shadowrocket here: <a href="https://apps.apple.com/tw/app/shadowrocket/id932747118" target="_blank">Apple Store</a></p>
+        <h3><span class="number">1</span>{{ $t('ios-1-title') }}</h3>
+        <p class="info">{{ $t('ios-1-1') }}: <a href="https://apps.apple.com/tw/app/shadowrocket/id932747118" target="_blank">Apple Store</a></p>
       </div>
       <div class="wrap">
-        <h3><span class="number">2</span>Save Config QRCode to your album</h3>
+        <h3><span class="number">2</span>{{ $t('ios-2-title') }}</h3>
         <img class="s" src="../assets/qrcode.png" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">3</span>Import QRcode from your album</h3>
+        <h3><span class="number">3</span>{{ $t('ios-3-title') }}</h3>
         <p class="info">
-          Click scan icon in the Upper left corner, and scan QRcode.<br>You can also save QRcode and import the QRcode from your album to Shadowrocket.
+          {{ $t('ios-3-1') }}<br>
+          {{ $t('ios-3-2') }}
         </p>
-        <img class="s" src="../assets/ios-1.png" alt="">
+        <img class="s" :src="`${$t('images.ios-1')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">4</span>Turn on Disney+ and allow Shadowrocket to add configuration</h3>
-        <img class="s" src="../assets/ios-2.png" alt="">
+        <h3><span class="number">4</span>{{ $t('ios-4-title') }}</h3>
+        <img class="s" :src="`${$t('images.ios-1')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">5</span>Go to setting and turn on VPN configuration</h3>
-        <img class="s" src="../assets/ios-3.gif" alt="">
+        <h3><span class="number">5</span>{{ $t('ios-5-title') }}</h3>
+        <img class="s" :src="`${$t('images.ios-1')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">6</span>Download Disney+ App</h3>
-        <div class="caution">You will need to have a United States Apple Account to download the app.</div>
-        <p class="info">Go to <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple Store</a> download Disney+ and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
+        <h3><span class="number">6</span>{{ $t('ios-6-title') }}</h3>
+        <div class="caution">{{ $t('ios-6-1') }}</div>
+        <p class="info">{{ $t('go-to') }} <a href="https://apps.apple.com/us/app/disney/id1446075923" target="_blank">Apple Store</a> {{ $t('ios-6-1') }} <br> {{ $t('last-step') }}</p>
         <img class="s" src="../assets/ios-3.png" alt="">
       </div>
-      <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
+      <div class="done"><h4>🎉 {{ $t('done') }}</h4></div>
     </div>
   </div>
 </template>

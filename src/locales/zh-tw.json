@@ -1,0 +1,78 @@
+{
+  "home-select": "選擇你的系統",
+  "home-intro": "無論你身在何處，Jelly Boo都能帶著你進入Disney+",
+  "lang": "tw",
+  "note": "成為一隻Jelly Boo，幫助更多迪士尼粉絲觀看Disney+，並獲取額外收入",
+  "note-btn": "賺取收入",
+  "intro-title": "無論你身在何處，Jelly Boo都能帶著你進入Disney+",
+  "intro-btn": "立即免費體驗",
+  "intro-choose": "選擇你的系統",
+
+  "macos-1-title": "下載 v2RayU",
+  "macos-1-1": "你可以由此下載 v2RayU",
+  "macos-1-2": "請確認你的 v2RayU 檔案為最新版本",
+  "macos-2-title": "允許MAC安裝 v2RayU",
+  "macos-4-title": "點選天頂選單的v2RayU圖示後接著點選 “從黏貼板導入”",
+  "macos-5-title": "設定為 \"全局模式\"",
+
+  "windows-1-title": "下載 v2RayN",
+  "windows-1-1": "你可以由此下載 v2RayN",
+  "windows-1-2": "請確認軟體為最新版本",
+  "windows-2-title": "安裝 v2rayN",
+  "windows-2-1": "下載檔案並解壓縮，接著打開安裝檔\"v2rayN.exe\"",
+  "windows-2-2": "",
+  "windows-4-title": "點選選單列上的「服務器」接著點選「從剪貼版導入批量URL」",
+  "windows-5-title": "設定 Http proxy",
+  "windows-5-1": "開啟底部選單列的 \"Http 代理\" 接著點選 \"全局模式\"",
+  "windows-6-title": "設為活動服務器",
+
+  "ios-1-title": "下載 Shadowrocket",
+  "ios-1-1": "你可以由此下載 Shadowrocket",
+  "ios-2-title": "將二維碼存至相簿",
+  "ios-3-title": "匯入二維碼圖片",
+  "ios-3-1": "你可以點畫面中左上方的掃碼按鈕，直接掃描前一步驟展示的二維碼圖片。",
+  "ios-3-2": "或者保存二維碼圖片至相簿後，從相簿中選取二維碼圖片匯入至Shadowrocket",
+  "ios-4-title": "在iOS設置中授權 Shadowrocket 啟用Disney+ ",
+  "ios-5-title": "啟用 Disney+ ",
+  "ios-6-title": "下載 Disney + App",
+  "ios-6-1": "你會需要「美國地區的Apple帳號」才能下載 Disney+ APP",
+  "ios-6-2": "下載並註冊帳號。",
+
+  "and-1-title": "下載 v2rayNG",
+  "and-1-1": "你可由此下載",
+  "and-2-title": "將二維碼存至相簿",
+  "and-3-title": "點選 \"+\" 符號並匯入二維碼圖片",
+  "and-4-title": "同意連線",
+  "and-5-title": "下載 Disney + App",
+  "and-5-1": "你會需要「美國地區的Google帳號」才能下載 Disney+ 應用",
+  "and-5-2": "下載並註冊帳號。",
+
+  "config-1": "複製以下內容",
+  "config-2": "北美Disney+",
+  "config-3": "點我複製",
+  "last-step-title": "Sign up your Disney + Account",
+  "go-to": "前往",
+  "last-step-account": "註冊帳號並付費後就能觀看Disney+",
+  "last-step": "若你想先試看Disney+，馬上加入我們的社群，就能領取免費的 Disney+ 試看帳號。",
+  "done": "完成！立即享受一趟 Disney+ 的旅程",
+
+  "footer-title": "免費 Disney+ 試看帳號放送中！",
+  "footer-dis": "加入社群，取得免費的 Disney+ 試看帳號",
+  "footer-btn": "加入 Telegram",
+  
+    "images": {
+      "title": "/img/title-tw.6d3a71b8.svg",
+      "macos-1": "/img/macos-1-tw.0ae969e1.gif",
+      "macos-2": "/img/macos-2-tw.24a037e2.gif",
+      "macos-3": "/img/macos-3-tw.0ea82f6d.png",
+      
+      "and-1": "/img/and-1-tw.abcd7b38.png",
+      "and-2": "/img/and-2-tw.19988275.png",
+      "and-3": "/img/and-3-tw.e77cdcc7.png",
+      
+      "windows-1": "../img/windows-1-tw.b0322a50.png",
+      "windows-2": "../img/windows-2-tw.17798050.png",
+      "windows-3": "../img/windows-3-tw.32d328f7.png",
+      "windows-4": "../img/windows-4-tw.a0e4afba.png"
+  }
+}

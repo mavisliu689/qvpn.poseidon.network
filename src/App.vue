@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <a href="https://github.com/poseidon-network/qlauncher-linux" target="_blank" id="note">
-     💝 Earn rewards by helping others to watch Disney+ <div class="btn">Collect your gift 🎁</div>
+     💝 {{ $t('note') }} <div class="btn">{{ $t('note-btn') }} 🎁</div>
     </a>
     <div id="junbo">
-      <img src="./assets/title.svg" alt="" class="title">
-      <a href="#nav" class="purple-btn" id="scroll" v-smooth-scroll>Unblock Disney+ Now</a>
+      <LocaleSwitcher />
+      <img :src="`${$t('images.title')}`" alt="" class="title">
+      <a href="#nav" class="purple-btn" id="scroll" v-smooth-scroll>{{ $t('intro-btn') }}</a>
       <span class="poweredby">⚡ by Poseidon-Network</span>
       <img src="./assets/blob-p.svg" alt="" class="blob-p">
       <img src="./assets/blob-g.svg" alt="" class="blob-g">
@@ -19,9 +20,9 @@
     </div>
     <router-view/>
     <div class="giveaway">
-      <h3>Free Disney+ account Giveaway!</h3>
-      <h4>Join our community to get a free Disney+ account</h4>
-      <a href="" class="purple-btn" id="telegram" v-on:click="telegramURL">Join Telegram</a>
+      <h3>{{ $t('footer-title') }}</h3>
+      <h4>{{ $t('footer-dis') }}</h4>
+      <a href="" class="purple-btn" id="telegram" v-on:click="telegramURL">{{ $t('footer-btn') }}</a>
       <div class="bg-elements">
         <span class="triangle triangle-1"></span>
         <span class="triangle triangle-2 grey"></span>
@@ -39,6 +40,7 @@
 </template>
 
 <script>
+import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
 import $ from 'jquery'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import Vue from 'vue'
@@ -46,7 +48,10 @@ import Vue from 'vue'
 Vue.use(vueSmoothScroll)
 
 export default {
-  name: 'telegramURL',
+  name: 'APP',
+  components: {
+    LocaleSwitcher
+  },
   methods: {
     telegramURL () {
       if (window.navigator.language === 'zh-CN' || window.navigator.language === 'zh-TW') {

@@ -1,0 +1,82 @@
+{
+  "home-select": "Select a device",
+  "home-intro": "Let QVPN show you a whole new world.",
+  "lang": "en",
+  "note": "Earn rewards by helping others to watch Disney +",
+  "note-btn": "Collect your gift",
+  "intro-title": "Watch Disney + with Jelly Boo for free",
+  "intro-btn": "Unblock Disney + Now",
+  "intro-choose": "Choose Your Device",
+
+  "macos-1-title": "Download v2rayU",
+  "macos-1-1": "You can download the v2RayU Client here",
+  "macos-1-2": "Make sure your v2RayU is up to date.",
+  "macos-2-title": "Allow Mac to install v2rayU.",
+  "macos-4-title": "Click“ Import Server From Pasteboard” via v2rayU icon in the menu bar",
+  "macos-5-title": "Turn to \"Global Mode\"",
+
+  "windows-1-title": "Download v2rayN",
+  "windows-1-1": "You can download the v2rayN here",
+  "windows-1-2": "Make sure your v2rayN is up to date.",
+  "windows-2-title": "Install v2rayN",
+  "windows-2-1": "Once downloaded, unzip the archive to a location you prefer.",
+  "windows-2-2": "You can then go ahead and open the“ v2rayN.exe” file.",
+  "windows-4-title": "Import bulk URL from clipboard to the v2rayN toolbar.",
+  "windows-5-title": "Setup Http proxy",
+  "windows-5-1": "Select the menu \"Http proxy\" and then select \"global mode\"",
+  "windows-6-title": "Set the server you imported as active server",
+
+  "ios-1-title": "Download Shadowrocket",
+  "ios-1-1": "You can download Shadowrocket here",
+  "ios-2-title": "Save Config QRCode to your album",
+  "ios-3-title": "Import QRcode from your album",
+  "ios-3-1": "Click scan icon in the Upper left corner, and scan QRcode.",
+  "ios-3-2": "You can also save QRcode and import the QRcode from your album to Shadowrocket.",
+  "ios-4-title": "Turn on Disney + and allow Shadowrocket to add configuration",
+  "ios-5-title": "Go to setting and turn on VPN configuration",
+  "ios-6-title": "Download Disney + App",
+  "ios-6-1": "You will need to have a United States Apple Account to download the app.",
+  "ios-6-2": "Go to Apple Store download Disney+ and sign up an account.",
+
+  "and-1-title": "Download v2rayNG",
+  "and-1-1": "You can download v2rayNG here",
+  "and-2-title": "Save Config QRCode to your album",
+  "and-3-title": "Click \"+\" icon, and tap \"Import config from QRcode\"",
+  "and-4-title": "Accept connection request",
+  "and-5-title": "Download Disney + App",
+  "and-5-1": "You will need to have a United States Google Play Account to download the app.",
+  "and-5-2": "download Disney+ and sign up an account.",
+
+  "config-1": "Copy Configuration",
+  "config-2": "Your Configuration",
+  "config-3": "Tab to copy",
+  "last-step-title": "Sign up your Disney + Account",
+  "go-to": "Go to",
+  "last-step-account": "and sign up an account.",
+  "last-step": "If you’ d like to take a trial of watching Disney + , our community supports you for Disney + free trial. Come join us!",
+  "done": "ALL DONE! ENJOY.",
+
+  "footer-title": "Free Disney+ account Giveaway!",
+  "footer-dis": "Join our community to get a free Disney+ account",
+  "footer-btn": "Join Telegram",
+
+  "images": {
+    "title": "/img/title.c87e0fa3.svg",
+    "macos-1": "/img/macos-1.b6455b1f.gif",
+    "macos-2": "/img/macos-2.d63b5fc4.gif",
+    "macos-3": "/img/macos-2.41722834.png",
+
+    "ios-1": "/img/ios-1.095e4623.png",
+    "ios-2": "/img/ios-2.ddfeff0c.png",
+    "ios-3": "/img/ios-3.a1f64e9d.gif",
+
+    "and-1": "/img/and-1.431343cb.png",
+    "and-2": "/img/and-2.554a9cf7.png",
+    "and-3": "/img/and-3.923cea3e.png",
+
+    "windows-1": "/img/windows-1.e3aa3f31.png",
+    "windows-2": "/img/windows-2.8157e111.png",
+    "windows-3": "/img/windows-3.2732b653.png",
+    "windows-4": "/img/windows-4.a14d4a31.png"
+  }
+}

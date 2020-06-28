@@ -4,44 +4,48 @@
     <div class="hr"></div>
     <div class="content">
       <div class="wrap">
-        <h3><span class="number">1</span>Download v2rayN</h3>
-        <p class="info">You can download the v2rayN here: <a href="https://github.com/2dust/v2rayN/releases/download/3.19/v2rayN-Core.zip" target="_blank"> v2rayN.zip</a></p>
-        <br><div class="caution">Make sure your v2rayN is up to date.</div>
+        <h3><span class="number">1</span>{{ $t('windows-1-title') }}</h3>
+        <p class="info">{{ $t('windows-1-1') }}: <a href="https://github.com/2dust/v2rayN/releases/download/3.19/v2rayN-Core.zip" target="_blank"> v2rayN.zip</a></p>
+        <br><div class="caution">{{ $t('windows-1-2') }}</div>
       </div>
       <div class="wrap">
-        <h3><span class="number">2</span>Install v2rayN</h3>
-        <p class="info">Once downloaded, unzip the archive to a location you prefer.<br> You can then go ahead and open the “v2rayN.exe” file.</p>
-        <img src="../assets/windows-1.png" alt="">
+        <h3><span class="number">2</span>{{ $t('windows-2-title') }}</h3>
+        <p class="info">
+          {{ $t('windows-2-1') }}<br>
+          {{ $t('windows-2-2') }}
+        </p>
+        <img :src="`${$t('images.windows-1')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">3</span>Copy Configuration</h3>
+        <h3><span class="number">3</span>{{ $t('config-1') }}</h3>
         <div class="config">
-          <h3>Your Configuration</h3>
+          <h3>{{ $t('config-2') }}</h3>
           <div class="input" id="copy-input" v-on:click="Copy">
-            <div id="copy">Tab to copy</div>
+            <div id="copy">{{ $t('config-3') }}</div>
             <div class="input-text">vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leXBsdXMuM3EudmMifQ==</div>
           </div>
         </div>
       </div>
       <div class="wrap">
-        <h3><span class="number">4</span>Import bulk URL from clipboard to the v2rayN toolbar.</h3>
-        <img src="../assets/windows-2.png" alt="">
+        <h3><span class="number">4</span>{{ $t('windows-4-title') }}</h3>
+        <img :src="`${$t('images.windows-2')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">5</span>Setup Http proxy</h3>
-        <p class="info">Select the menu "Http proxy" and then select "global mode"</p>
-        <img src="../assets/windows-3.png" alt="">
+        <h3><span class="number">5</span>{{ $t('windows-5-title') }}</h3>
+        <p class="info">{{ $t('windows-5-1') }}</p>
+        <img :src="`${$t('images.windows-3')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">6</span>Set the server you imported as active server</h3>
-        <img src="../assets/windows-4.png" alt="">
+        <h3><span class="number">6</span>{{ $t('windows-6-title') }}</h3>
+        <img :src="`${$t('images.windows-4')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">7</span>Sign up your Disney+ Account</h3>
-        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+ Account</a> and sign up account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
-        <img src="../assets/windows-5.png" alt="">
+        <h3><span class="number">7</span>{{ $t('last-step-title') }}</h3>
+        <p class="info">{{ $t('go-to') }} <a href="https: //www.disneyplus.com/home" target="_blank">Disney+</a> {{ $t('last-step-account') }} <br> {{ $t('last-step') }}</p>
+        <img src="../assets/macos-4.png" alt="">
+        <img :src="`${$t('images.macos-3')}`" alt="">
       </div>
-      <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
+      <div class="done"><h4>🎉 {{ $t('done') }}</h4></div>
     </div>
   </div>
 </template>

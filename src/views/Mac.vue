@@ -4,38 +4,44 @@
     <div class="hr"></div>
     <div class="content">
       <div class="wrap">
-        <h3><span class="number">1</span>Download v2rayU</h3>
-        <p class="info">You can download the v2RayU Client here: <a href="https://github.com/yanue/V2rayU/releases/download/2.2.0/V2rayU.dmg" target="_blank"> V2rayU.dmg</a></p>
-        <br><div class="caution">Make sure the client app is up to date.</div>
+        <h3><span class="number">1</span>{{ $t('macos-1-title') }}</h3>
+        <p class="info">{{ $t('macos-1-1') }} : <a href="https://github.com/yanue/V2rayU/releases/download/2.2.0/V2rayU.dmg" target="_blank"> V2rayU.dmg</a></p>
+        <br><div class="caution">{{ $t('macos-1-2') }}</div>
       </div>
       <div class="wrap">
-        <h3><span class="number">2</span>Allow Mac to install v2rayU.</h3>
-        <img src="../assets/macos-4.gif" alt=""><br>
+        <h3><span class="number">2</span>{{ $t('macos-2-title') }}</h3>
+        <img :src="`${$t('images.macos-1')}`" alt="">
+        <!-- <img src="../assets/macos-1-tw.gif" alt="">
+        <img src="../assets/macos-2-tw.gif" alt="">
+        <img src="../assets/macos-3-tw.png" alt="">
+        <img src="../assets/macos-1.gif" alt="">
+        <img src="../assets/macos-4.gif" alt="">
+        <img src="../assets/macos-2.png" alt=""> -->
       </div>
       <div class="wrap">
-        <h3><span class="number">3</span>Copy Configuration</h3>
+        <h3><span class="number">3</span>{{ $t('config-1') }}</h3>
         <div class="config">
-          <h3>Your Configuration</h3>
+          <h3>{{ $t('config-2') }}</h3>
           <div class="input" id="copy-input" v-on:click="Copy">
-            <div id="copy">Tab to copy</div>
+            <div id="copy">{{ $t('config-3') }}</div>
             <div class="input-text">vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leXBsdXMuM3EudmMifQ==</div>
           </div>
         </div>
       </div>
       <div class="wrap">
-        <h3><span class="number">4</span>Click “Import Server From Pasteboard” via v2rayU icon in the menu bar</h3>
-        <img src="../assets/macos-1.gif" alt="">
+        <h3><span class="number">4</span>{{ $t('macos-4-title') }}</h3>
+        <img :src="`${$t('images.macos-2')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">5</span>Turn to "Global Mode"</h3>
-        <img src="../assets/macos-2.png" alt="">
+        <h3><span class="number">5</span>{{ $t('macos-5-title') }}</h3>
+        <img :src="`${$t('images.macos-3')}`" alt="">
       </div>
       <div class="wrap">
-        <h3><span class="number">6</span>Sign up your Disney+ Account</h3>
-        <p class="info">Go to <a href="https://www.disneyplus.com/home" target="_blank">Disney+</a> and sign up an account.<br/>If you’d like to take a trial of watching Disney+, our community supports you for Disney + free trial. Come join us!</p>
-        <img src="../assets/macos-3.png" alt="">
+        <h3><span class="number">6</span>{{ $t('last-step-title') }}</h3>
+        <p class="info">{{ $t('go-to') }} <a href="https: //www.disneyplus.com/home" target="_blank">Disney+</a> {{ $t('last-step-account') }} <br> {{ $t('last-step') }}</p>
+        <img src="../assets/macos-4.png" alt="">
       </div>
-      <div class="done"><h4>🎉 ALL DONE! ENJOY.</h4></div>
+      <div class="done"><h4>🎉 {{ $t('done') }}</h4></div>
     </div>
   </div>
 </template>
