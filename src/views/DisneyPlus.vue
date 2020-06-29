@@ -5,6 +5,8 @@
     <img src="../assets/disney-logo-dark.svg" alt="">
     <!-- assets -->
     <div class="images">
+      <img src="../assets/title-tw.svg" alt="">
+      <img src="../assets/title.svg" alt="">
       <img src="../assets/windows-1-tw.png" alt="">
       <img src="../assets/windows-2-tw.png" alt="">
       <img src="../assets/windows-3-tw.png" alt="">
