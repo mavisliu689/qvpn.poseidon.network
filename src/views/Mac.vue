@@ -11,12 +11,6 @@
       <div class="wrap">
         <h3><span class="number">2</span>{{ $t('macos-2-title') }}</h3>
         <img :src="`${$t('images.macos-1')}`" alt="">
-        <!-- <img src="../assets/macos-1-tw.gif" alt="">
-        <img src="../assets/macos-2-tw.gif" alt="">
-        <img src="../assets/macos-3-tw.png" alt="">
-        <img src="../assets/macos-1.gif" alt="">
-        <img src="../assets/macos-4.gif" alt="">
-        <img src="../assets/macos-2.png" alt=""> -->
       </div>
       <div class="wrap">
         <h3><span class="number">3</span>{{ $t('config-1') }}</h3>
