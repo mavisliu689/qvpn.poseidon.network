@@ -4,9 +4,9 @@ WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
 COPY . /app
-RUN npm install --global --production windows-build-tools
 RUN rm -rf ~/.node-gyp
 RUN npm install node-gy
+RUN npm rebuild node-sass
 RUN npm run build
 
 # Deliver the dist folder with Nginx
