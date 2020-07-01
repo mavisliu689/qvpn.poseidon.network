@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json package-lock.json /app/
 RUN npm install
 COPY . /app
-RUN npm build
+RUN npm run build
 
 # Deliver the dist folder with Nginx
 FROM nginx:stable-alpine
