@@ -2,8 +2,9 @@
 FROM node:lts-alpine AS Builder
 WORKDIR /app
 COPY package.json package-lock.json /app/
-RUN npm run install
+RUN npm install
 COPY . /app
+RUN npm rebuild node-sass
 RUN npm run build
 
 # Deliver the dist folder with Nginx
