@@ -5,39 +5,38 @@ import $ from 'jquery'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    redirect: '/DisneyPlus'
-  },
-  {
-    path: '/DisneyPlus',
-    name: 'DisneyPlus',
-    component: DisneyPlus
-  },
-  {
-    path: '/DisneyPlus/MacOS',
-    name: 'MacOS',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Mac.vue')
-  },
-  {
-    path: '/DisneyPlus/Windows',
-    name: 'Windows',
-    // component: Home
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Windows.vue')
-  },
-  {
-    path: '/DisneyPlus/iOS',
-    name: 'iOS',
-    component: () => import(/* webpackChunkName: "about" */ '../views/iOS.vue')
-  },
-  {
-    path: '/DisneyPlus/Android',
-    name: 'Android',
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Android.vue')
-  }
+const routes = [{
+  path: '/',
+  redirect: '/DisneyPlus'
+},
+{
+  path: '/DisneyPlus',
+  name: 'DisneyPlus',
+  component: DisneyPlus
+},
+{
+  path: '/DisneyPlus/MacOS',
+  name: 'MacOS',
+  component: () => import(/* webpackChunkName: "about" */ '../views/Mac.vue')
+},
+{
+  path: '/DisneyPlus/Windows',
+  name: 'Windows',
+  // component: Home
+  component: () =>
+    import(/* webpackChunkName: "about" */ '../views/Windows.vue')
+},
+{
+  path: '/DisneyPlus/iOS',
+  name: 'iOS',
+  component: () => import(/* webpackChunkName: "about" */ '../views/iOS.vue')
+},
+{
+  path: '/DisneyPlus/Android',
+  name: 'Android',
+  component: () =>
+    import(/* webpackChunkName: "about" */ '../views/Android.vue')
+}
   // {
   //   path: '/Windows',
   //   name: 'Windows',
@@ -54,6 +53,7 @@ const router = new VueRouter({
 })
 
 router.afterEach((to, from, next) => {
+  if (!$('#nav').offset()) return
   $('html, body').animate({
     scrollTop: $('#nav').offset().top
   }, 600)

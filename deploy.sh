@@ -10,7 +10,7 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-echo 'vpn.poseidon.network' > CNAME
+echo 'staging.jelly.sh' > CNAME
 
 git init
 git add -A
