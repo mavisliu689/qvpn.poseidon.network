@@ -5,6 +5,8 @@ COPY package.json package-lock.json /app/
 RUN npm install
 COPY . /app
 RUN npm install --python=python2.7
+RUN npm config set python python2.7
+RUN npm rebuild node-sass
 RUN npm run build
 
 # Deliver the dist folder with Nginx
