@@ -2,12 +2,12 @@
 FROM node:lts-alpine AS Builder
 WORKDIR /app
 COPY package.json package-lock.json /app/
-RUN npm install
-COPY . /app
 RUN apk add --no-cache make gcc g++ python && \
   npm install --production --silent && \
   apk del make gcc g++ python
 RUN npm config set python python2.7
+RUN npm install
+COPY . /app
 RUN npm rebuild node-sass
 RUN npm run build
 
