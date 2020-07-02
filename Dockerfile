@@ -7,6 +7,7 @@ RUN apk add --no-cache make gcc g++ python && \
 RUN npm config set python python2.7
 COPY . /app
 RUN npm rebuild node-sass
+RUN npm i -S @vue/cli-service
 RUN npm run build
 
 # Deliver the dist folder with Nginx
