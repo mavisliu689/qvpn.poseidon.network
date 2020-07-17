@@ -19,6 +19,7 @@
       <router-link class="btn" data-icon="4" to="/DisneyPlus/android"><span>Android</span></router-link>
     </div>
     <router-view/>
+    <apis />
     <div class="giveaway">
       <h3>{{ $t('footer-title') }}</h3>
       <h4>{{ $t('footer-dis') }}</h4>
@@ -41,6 +42,7 @@
 
 <script>
 import LocaleSwitcher from '@/components/LocaleSwitcher.vue'
+import apis from '@/components/apis.vue'
 import $ from 'jquery'
 import vueSmoothScroll from 'vue2-smooth-scroll'
 import Vue from 'vue'
@@ -50,7 +52,8 @@ Vue.use(vueSmoothScroll)
 export default {
   name: 'APP',
   components: {
-    LocaleSwitcher
+    LocaleSwitcher,
+    apis
   },
   methods: {
     telegramURL () {
