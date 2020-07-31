@@ -117,11 +117,11 @@ export const fetchDomainByService = async ({ service }) => {
   }
 }
 
-export const createReverseProxy = async ({ proxyPass, ServiceName }) => {
+export const createReverseProxy = async ({ proxyPass, serviceName }) => {
   try {
     const response = await instance.post('/v1/reverse_proxy', {
       proxy_pass: proxyPass,
-      service_name: ServiceName
+      service_name: serviceName
     })
     return response.data
   } catch (e) {

@@ -6,7 +6,7 @@ const state = {
   isError: false,
   errorMessages: [],
   domains: [],
-  serviceName: ''
+  serverName: ''
 }
 
 const getters = {
@@ -33,7 +33,7 @@ const mutations = {
   [types.CREATE_PROXYPASS_SUCCESS] (state, serviceName) {
     state.isLoading = false
     state.isError = false
-    state.serviceName = serviceName
+    state.serverName = serviceName.server_name
   },
   [types.CREATE_PROXYPASS_FAILURE] (state, e) {
     state.isLoading = false
@@ -52,11 +52,11 @@ const actions = {
       commit(types.FETCH_SERVICES_FAILURE, e.message)
     }
   },
-  async createReverseProxy ({ commit }, { proxyPass, ServiceName }) {
+  async createReverseProxy ({ commit }, { proxyPass, serviceName }) {
     commit(types.CREATE_PROXYPASS_PENDING)
     try {
-      const serviceName = await serviceAPI.createReverseProxy({ proxyPass, ServiceName })
-      commit(types.CREATE_PROXYPASS_SUCCESS, serviceName)
+      const serviceNameResult = await serviceAPI.createReverseProxy({ proxyPass, serviceName })
+      commit(types.CREATE_PROXYPASS_SUCCESS, serviceNameResult)
     } catch (e) {
       commit(types.CREATE_PROXYPASS_FAILURE, e.message)
     }
