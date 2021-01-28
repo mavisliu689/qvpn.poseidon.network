@@ -158,6 +158,8 @@ html,body {
   }
   .title {
     z-index: 2;
+    max-width: 90%;
+    margin: auto;
     @include breakpoint($tablet) {
       max-width: 90%;
       margin: auto;
