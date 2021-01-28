@@ -22,7 +22,7 @@
           <h3>{{ $t('config-2') }}</h3>
           <div class="input" id="copy-input" v-on:click="Copy">
             <div id="copy">{{ $t('config-3') }}</div>
-            <div class="input-text">vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leXBsdXMuM3EudmMifQ==</div>
+            <div class="input-text">vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IlVTLjNxcXEuaW8iLCJ0bHMiOiJub25lIiwiaWQiOiIzNTFkYmYzMy00MmRlLTQyZDMtOWE2ZS00M2ZkNWM3ZmQyNjgiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6IlVTLjNxcXEuaW8ifQ==</div>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ export default {
   name: 'Copy',
   methods: {
     Copy () {
-      CopyToClipboard('vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IkRpc25leVBsdXNfVVMiLCJ0bHMiOiJub25lIiwiaWQiOiI1MzFkNTBjMS0zODU1LTQ3MDMtOTRkYi1hNWQyM2Y5ZWU2ZDYiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6ImRpc25leXBsdXMuM3EudmMifQ==', true, 'Copied!')
+      CopyToClipboard('vmess://eyJwb3J0IjoiMzI0NDMiLCJwcyI6IlVTLjNxcXEuaW8iLCJ0bHMiOiJub25lIiwiaWQiOiIzNTFkYmYzMy00MmRlLTQyZDMtOWE2ZS00M2ZkNWM3ZmQyNjgiLCJhaWQiOiI2NCIsInYiOiIyIiwiaG9zdCI6IiIsInR5cGUiOiJub25lIiwicGF0aCI6IiIsIm5ldCI6InRjcCIsImFkZCI6IlVTLjNxcXEuaW8ifQ==', true, 'Copied!')
       $('#copy').html('Copied!')
       setTimeout(function () { $('#copy').html('Tab to copy') }, 1600)
 
